@@ -1,125 +1,111 @@
 # Python Royal
 
-[![Project management: uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![Code style & Static analysis: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![Type check: Mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
-[![Pipeline status](https://gitlab.com/jgaffiot1/python-royal/badges/app-demo/pipeline.svg)](https://gitlab.com/jgaffiot1/python-royal/-/commits/app-demo)
-[![Coverage report](https://gitlab.com/jgaffiot1/python-royal/badges/app-demo/coverage.svg)](https://gitlab.com/jgaffiot1/python-royal/-/commits/app-demo)
+[![Project management: uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)  
+[![Code style & Static analysis: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)  
+[![Type check: Mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)  
+[![Pipeline status](https://gitlab.com/jgaffiot1/python-royal/badges/app-demo/pipeline.svg)](https://gitlab.com/jgaffiot1/python-royal/-/commits/app-demo)  
+[![Coverage report](https://gitlab.com/jgaffiot1/python-royal/badges/app-demo/coverage.svg)](https://gitlab.com/jgaffiot1/python-royal/-/commits/app-demo)  
 [![Latest release](https://gitlab.com/jgaffiot1/python-royal/-/badges/release.svg)](https://gitlab.com/jgaffiot1/python-royal/-/releases)
 
 ## Description
 
-Support pour le workshop Python Royal du SnowCamp 2025.
+Support material for the Python Royal workshop at SnowCamp 2025.
 
-## Objectifs
+## Objectives
 
-Apprendre à faire du code Python stylé et robuste !
+Learn how to write stylish and robust Python code!
 
-Python a la réputation de ne pas être axé sur la qualité logicielle.
-C’était vrai il y a 20 ans, mais depuis de grands noms se sont bâtis sur ce langage :
+Python has a reputation for not being focused on software quality.  
+That may have been true 20 years ago, but today, major companies are built on this language:  
 Instagram, Spotify, Reddit, Dropbox...
-Pour arriver à allier Fiabilité, Maintenabilité, Évolutivité et Sécurité (= la fameuse
-Qualité), il faut apprendre le fonctionnement du langage et de son écosystème.
 
-Découvrons ensemble la structure d'un projet Python, les principes du langage à
-respecter, l'outillage à mettre en place et les pratiques à adopter pour travailler
-en Python avec une qualité industrielle.
+To achieve **reliability**, **maintainability**, **scalability**, and **security** (i.e., true *quality*), you need to understand how the language and its ecosystem work.
 
-## Prérequis
+Let’s discover together the structure of a Python project, the language principles to follow, the tools to set up, and the practices to adopt in order to work with Python at an industrial level of quality.
 
-- avoir les bases en Python
-- pouvoir installer des logiciels sur sa machine (accès réseau et droits)
-- un shell
-- si possible un compte GitLab ou GitHub
+## Prerequisites
 
-## Déroulement
+- Basic knowledge of Python  
+- Ability to install software on your machine (network access and permissions)  
+- A shell/terminal  
+- Ideally, a GitLab or GitHub account  
 
-Il y a des fichiers de détecteur de rayon X/gamma sur ce repo, affichons-les !
+## Workflow
 
-- [ ] Forker le projet [GitLab](https://gitlab.com/jgaffiot1/python-royal)
-      ou [GitHub](https://github.com/Lenormju/python-royal) sur son compte perso
-- [ ] Cloner le fork sur sa machine perso
-- [ ] Installer uv
-- [ ] Initier un nouveau projet avec uv
-- [ ] Remplir le `pyproject.toml`
-- [ ] Ajouter une dépendance : [Streamlit](https://streamlit.io/)
-- [ ] Afficher le hello world Streamlit
-- [ ] Ajouter de nouvelles dépendances : pandas et plotly
-- [ ] Charger un fichier et afficher la courbe avec Streamlit
+This repo includes X/gamma ray detector files — let’s display them!
 
-Et maintenant, un peu d'outillage.
+- [ ] Fork the project on [GitLab](https://gitlab.com/jgaffiot1/python-royal)  
+      or [GitHub](https://github.com/Lenormju/python-royal) to your personal account  
+- [ ] Clone your fork to your local machine  
+- [ ] Install `uv`  
+- [ ] Initialize a new project with `uv`  
+- [ ] Fill in the `pyproject.toml`  
+- [ ] Add a dependency: [Streamlit](https://streamlit.io/)  
+- [ ] Display the Streamlit Hello World  
+- [ ] Add more dependencies: `pandas` and `plotly`  
+- [ ] Load a file and display a plot with Streamlit  
 
-- [ ] Installer ruff, mypy et pytest en dépendance de dev
-- [ ] Formatter son code avec ruff
-- [ ] Analyser son code avec ruff
-- [ ] Vérifier les types avec mypy
-- [ ] Écrire un test avec pytest
-- [ ] Intégrer ces pratiques dans son workflow avec son IDE
+Now for some tooling.
 
-Publions ce code.
+- [ ] Install `ruff`, `mypy`, and `pytest` as dev dependencies  
+- [ ] Format your code with `ruff`  
+- [ ] Analyze your code with `ruff`  
+- [ ] Check types with `mypy`  
+- [ ] Write a test using `pytest`  
+- [ ] Integrate these practices into your IDE/workflow  
 
-- [ ] Créer une release et son tag sur Git(Hub|Lab)
-- [ ] Créer un paquet (formats sdist et wheel) avec uv
-- [ ] Intégrer le tag dans le paquet avec versioningit
-- [ ] Publier ce code sur le package registry de Git(Hub|Lab)
-- [ ] (en option, construire une image Docker contenant le code et la publier)
+Let’s publish this code.
 
-Automatisons un peu tout ça.
+- [ ] Create a release and tag it on Git(Hub|Lab)  
+- [ ] Build a package (both `sdist` and `wheel` formats) with `uv`  
+- [ ] Integrate the tag into the package using `versioningit`  
+- [ ] Publish the code to Git(Hub|Lab)'s package registry  
+- [ ] *(Optional: Build a Docker image containing the code and publish it)*  
 
-- [ ] Vérifier le code avant de commiter avec pre-commit
-- [ ] Uniformiser le workflow avec Doit (voire Make)
-- [ ] Lancer la vérification automatique avec GitLab CI / GitHub Actions
+Let’s automate things a bit.
 
-Et quand même documentons.
+- [ ] Run checks before committing using `pre-commit`  
+- [ ] Standardize the workflow with `Doit` (or even `Make`)  
+- [ ] Trigger automatic checks using GitLab CI / GitHub Actions  
 
-- [ ] Installer sphinx en dev
-- [ ] Construire la base de sa documentation
-- [ ] Extraire les docstrings et les intégrer avec apidoc
+And of course, document everything.
 
-Continuer l'application tant qu'on peut !
+- [ ] Install `sphinx` as a dev dependency  
+- [ ] Build the base of your documentation  
+- [ ] Extract docstrings and integrate them using `apidoc`  
 
-- [ ] Ajouter un champ pour charger un fichier de données
-- [ ] Extraire le temps d'acquisition et afficher les courbes en impact/s
-- [ ] Ajouter une page de recherche de pics sur les courbes
-- [ ] Étalonner les courbes en énergie à partir des courbes de références
-  (Na22, Cs137, Co60)
-- [ ] Refactoriser en séparant affichage, lecture de données, et traitement
-- [ ] Enregistrer les valeurs d'étalonnage dans l'état de l'application et les utiliser
-  pour toutes les courbes
-- [ ] Ajouter un champ optionnel pour charger un second fichier à soustraire au premier
-- [ ] Ajuster les couleurs, ajouter un logo (CSS en option)
+Continue developing the app as far as possible!
 
-## Données
+- [ ] Add a field to load a data file  
+- [ ] Extract acquisition time and display curves in impacts/second  
+- [ ] Add a peak-search page for the curves  
+- [ ] Calibrate the curves in energy using reference curves  
+  (Na22, Cs137, Co60)  
+- [ ] Refactor by separating display, data reading, and processing  
+- [ ] Store calibration values in the app state and apply them to all curves  
+- [ ] Add an optional field to load a second file to subtract from the first  
+- [ ] Adjust colors, add a logo (optional CSS styling)  
 
-Les données proviennent d'un capteur de rayonnement X et gamma (la version plus
-énergétique des X), utilisé pour mesurer la radioactivité résiduelle d'échantillons
-qu'on espère très purs, donc de très faibles radioactivités.
+## Data
 
-Il fonctionne sur un principe proche des panneaux solaires, mais au lieu d'être exposé
-à une quantité astronomique de photons optiques, il ne reçoit qu'un photon X ou gamma
-de temps en temps. Le capteur ne donne donc pas un courant continu comme le panneau
-solaire, mais de petits pics quand par hasard un photon X ou gamma tape dedans.
-La hauteur du pic nous donne l'énergie du photon qui a impacté le capteur.
+The data comes from an X-ray and gamma radiation sensor (gamma being the more energetic version of X-rays), used to measure residual radioactivity in samples that are hopefully very pure — so, with very low levels of radioactivity.
 
-Sauf que le capteur enregistre ces hauteurs de façon très, très brute. Il se contente
-de compter les hauteurs sur une échelle allant de 1 à 16384. Ce ne sont même pas des
-volts ou une unité d'énergie, juste le nombre de canaux du convertisseur
-analogique/numérique, qui code les hauteurs sur 14 bits (16384=2^14).
-Comme le capteur ne fait que compter les impacts, il faut tenir compte manuellement
-du temps d'enregistrement pour savoir si l'échantillon était peu ou beaucoup radioactif
-(combien d'impact en 1 heure par exemple ?).
+It works similarly to solar panels, but instead of being exposed to tons of optical photons, it receives just the occasional X-ray or gamma photon.  
+The sensor doesn't output a continuous current like a solar panel; it produces small spikes each time a photon hits it.  
+The height of each spike gives us the energy of the impacting photon.
 
-Pour retrouver l'échelle d'énergie, on place devant le capteur des éléments radioactifs
-connus, donc on connait l'énergie des pics (keV=une unité d'énergie) :
+However, the sensor records these spike heights in a very raw format:  
+It simply counts the height levels on a scale from 1 to 16,384. These aren’t even volts or energy units, just ADC (analog-to-digital converter) channels encoded on 14 bits (16,384 = 2¹⁴).  
+Because the sensor only counts impacts, we must manually consider the recording time to determine how radioactive a sample is (e.g., how many impacts in one hour?).
 
-- Cobalt 60 (Co60) : 2 pics à 1173.2 keV et 1332.5 keV
-- Sodium 22 (Na22) : 2 pics à 511 keV et 1274.5 keV
-- Césium 137 (CS137) : pic à 661.7 keV
+To retrieve the energy scale, we place known radioactive elements in front of the sensor — we know the expected energy of their peaks (in keV, a unit of energy):
 
-Enfin, les photons X ou gamma peuvent venir de l'échantillon ou de l'environnement, qui
-est toujours un peu radioactif. Pour en tenir compte, il faut soustraire à la mesure
-d'un échantillon la mesure de la radioactivité de l'environnement, qu'on appelle
-le bruit de fond (background en anglais). On a des mesures de deux échantillons :
-"pmt" et "steel", et deux bruits de fond : "bkg" et "bkg2".
+- Cobalt 60 (Co60): 2 peaks at 1173.2 keV and 1332.5 keV  
+- Sodium 22 (Na22): 2 peaks at 511 keV and 1274.5 keV  
+- Cesium 137 (Cs137): 1 peak at 661.7 keV  
 
-À vos claviers !
+Also, the X or gamma photons can come from either the sample or the environment, which is always slightly radioactive.  
+To account for this, we subtract the environmental measurement (called **background**) from the sample’s measurement.  
+We have measurements for two samples: `"pmt"` and `"steel"`, and two background measurements: `"bkg"` and `"bkg2"`.
+
+**Time to code!**
